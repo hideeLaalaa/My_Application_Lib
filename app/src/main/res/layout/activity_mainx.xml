@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="#5EBCBCBC"
+    android:background="#48E8E8E8"
+    >
+
+<!--    android:background="#015357"-->
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:background="@drawable/rounded"-->
+<!--        app:itemBackground="@drawable/nav_style"-->
+<!--        app:menu="@menu/bottommenu"-->
+<!--        app:itemTextColor="@color/nav_color"-->
+<!--        app:itemIconTint="@color/nav_color"-->
+<!--        app:itemHorizontalTranslationEnabled="true"-->
+<!--        app:labelVisibilityMode="auto"-->
+<!--        android:layout_height="61.6dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_alignParentBottom="true"/>-->
+
+<!--    <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        app:cnb_menuResource="@menu/chip_bottommenu"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:cnb_unselectedColor="@android:color/black"-->
+<!--        app:cnb_radius="4dp"-->
+<!--        app:cnb_iconSize="20dp"-->
+<!--        android:background="@drawable/rounded_corners"-->
+<!--        app:cnb_orientationMode="horizontal"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:elevation="8dp"-->
+<!--    />-->
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomBar"
+        app:abb_tabs="@menu/chip_bottommenu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded"
+        android:elevation="2dp"
+        app:abb_animationDuration="300"
+        app:abb_animationInterpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorColor="#FFFFFF"
+        app:abb_indicatorHeight="4dp"
+        app:abb_selectedIndex="1"
+        app:abb_indicatorMargin="25dp"
+        app:abb_selectedTabType="text"
+        app:abb_tabAnimation="slide"
+        app:abb_indicatorLocation="bottom"
+        app:abb_tabColor="#000000"
+        app:abb_tabColorSelected="#FFFFFF"
+    />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="match_parent"
+        android:background="#48F8F8F8">
+
+
+    </FrameLayout>
+</RelativeLayout>
+
+
